@@ -16,7 +16,7 @@ import (
 )
 
 const baseUrl = "https://t3n.de"
-const overviewPagesToParse = 100
+const overviewPagesToParse = 5
 const articlesPerPage = 10
 
 func main() {
