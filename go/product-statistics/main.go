@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 	"product-statistics/models"
+	ui_renderer "product-statistics/ui-renderer"
 	"strings"
 	"time"
 )
@@ -60,6 +61,8 @@ func main() {
 		"Kategorie: %s \n"+
 		"Marke: %s \n"+
 		"", productStats.Name, productStats.Price, productStats.DiscountedPrice, productStats.Rating, productStats.Category, productStats.Brand))
+
+	ui_renderer.ShowProductStats(productStats)
 }
 
 func findProduct(productArray []models.Product, productName string) *models.Product {
